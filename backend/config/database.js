@@ -14,10 +14,10 @@ module.exports = {
     dialect: 'postgres',
     seederStorage: 'sequelize',
     diaclectOptions: {
-      // ssl: {
-      //   require: true,
-      //   rejectUnauthorized: false
-      // }
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
     }
   }
 }
