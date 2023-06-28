@@ -12,12 +12,14 @@ module.exports = {
   production: {
     use_env_variable: 'DATABASE_URL',
     dialect: 'postgres',
+    protocol: 'postgres',
     seederStorage: 'sequelize',
     diaclectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false
-      }
+      ssl: true
+      // ssl: {
+      //   require: true,
+      //   rejectUnauthorized: false
+      // }
     }
   }
 }
